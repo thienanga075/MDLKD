@@ -1,0 +1,25 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #888;
+    --primary-color: #e97135;
+    --background-color: #f1f2f4;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.app {
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+
+}
