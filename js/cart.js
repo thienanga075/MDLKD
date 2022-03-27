@@ -244,7 +244,7 @@ window.addEventListener("load", function () {
     cartItems[i].insertAdjacentHTML("beforeend", Rederitem(itemC));
   }
 
-  let listItem = [];
+  var listItem = [];
 
   //add cart items
 
@@ -278,7 +278,7 @@ window.addEventListener("load", function () {
         const newPrice = listItem[index].number + itemChild.number;
         listItem[index].number = newPrice;
       } else if (
-        (index < 0 || Array.from(listItemgit ).length === 0) &&
+        (index < 0 || Array.from(listItemgit).length === 0) &&
         itemChild.number > 0
       ) {
         listItem.push(itemChild);
