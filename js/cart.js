@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
     // console.log(scrollY);
     if (scrollY >= heightHeader) {
       header && header.classList.add("is-fixed");
-      document.body.style.paddingTop = `${headerHeight}px`;
+      document.body.style.paddingTop = `${heightHeader}px`;
     } else {
       document.body.style.paddingTop = 0;
 
@@ -271,13 +271,16 @@ window.addEventListener("load", function () {
       };
       let index = -1;
       // console.log(itemChild);
-      if (listItem.length > 0) {
+      if ([...listItem].length > 0) {
         index = listItem.findIndex((item) => item.id === itemChild.id);
       }
       if (index > -1) {
         const newPrice = listItem[index].number + itemChild.number;
         listItem[index].number = newPrice;
-      } else if ((index < 0 || listItem.length === 0) && itemChild.number > 0) {
+      } else if (
+        (index < 0 || [...listItem].length === 0) &&
+        itemChild.number > 0
+      ) {
         listItem.push(itemChild);
       } else {
         alert("so luong phải lon hon 0");
@@ -334,7 +337,7 @@ window.addEventListener("load", function () {
     console.log(listItem);
     modalMain.innerHTML = "";
     // console.log(listItem);\
-    if (Array.isArray(listItem) && listItem.length > 0) {
+    if (Array.isArray(listItem) && [...listItem].length > 0) {
       listItem.forEach((item, index) => renderItemModal(item));
     }
   }
