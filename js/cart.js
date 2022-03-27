@@ -271,14 +271,14 @@ window.addEventListener("load", function () {
       };
       let index = -1;
       // console.log(itemChild);
-      if ([...listItem].length > 0) {
+      if (Array.from(listItem).length > 0) {
         index = listItem.findIndex((item) => item.id === itemChild.id);
       }
       if (index > -1) {
         const newPrice = listItem[index].number + itemChild.number;
         listItem[index].number = newPrice;
       } else if (
-        (index < 0 || [...listItem].length === 0) &&
+        (index < 0 || Array.from(listItemgit ).length === 0) &&
         itemChild.number > 0
       ) {
         listItem.push(itemChild);
@@ -344,7 +344,7 @@ window.addEventListener("load", function () {
   function handleSumMoney() {
     let sum = 0;
     let numberCart = 0;
-    if (listItem.length > 0) {
+    if ([...listItem].length > 0) {
       listItem.forEach((item, index) => {
         sum += item.number * item.price;
         numberCart += item.number;
