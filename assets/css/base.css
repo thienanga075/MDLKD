@@ -23,29 +23,4 @@ html {
   box-sizing: border-box;
 }
 
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-li {
-  list-style: none;
-}
-input,
-button,
-textarea {
-  outline: none;
-  border: none;
-}
 
-a,
-button {
-  text-decoration: none;
-  color: #1a1a1a;
-  border: none;
-}
-
-a:hover {
-  color: #1a1a1a;
-}
