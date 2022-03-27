@@ -252,11 +252,6 @@ window.addEventListener("load", function () {
   //add cart items
 
   function addCart(e) {
-    listItem =
-      localStorage.length > 0
-        ? JSON.parse(localStorage.getItem("listItem"))
-        : [];
-
     // window.onstorage = () => {
     //   listItem =
     //     localStorage.length > 0
@@ -264,6 +259,8 @@ window.addEventListener("load", function () {
     //       : [];
     //   console.log("thay doi");
     // };
+    listItem = JSON.parse(localStorage.getItem("listItem")) || [];
+    console.log(listItem);
     if (e.target.matches(".product-item__button span")) {
       const itemChild = {
         photo: this.querySelector(".product-image img").src,
@@ -330,10 +327,7 @@ window.addEventListener("load", function () {
   }
 
   function showCart() {
-    listItem =
-      localStorage.length > 0
-        ? JSON.parse(localStorage.getItem("listItem"))
-        : [];
+    listItem = JSON.parse(localStorage.getItem("listItem")) || [];
     console.log(listItem);
     modalMain.innerHTML = "";
     // console.log(listItem);\
