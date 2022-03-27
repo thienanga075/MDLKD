@@ -228,7 +228,7 @@ window.addEventListener("load", function () {
       <h3 class="itemTitle">${item.name}</h3>
       <div class="number-cart">
           <span>số lượng:</span>
-           <input type="number" value=""/>
+           <input type="number" value="1"/>
       </div>
       <div class="priceCon">
         <p class="price-item">${item.price}
@@ -261,7 +261,11 @@ window.addEventListener("load", function () {
     // };
     listItem = JSON.parse(localStorage.getItem("listItem")) || [];
     console.log(listItem);
-    if (e.target.matches(".product-item__button span")) {
+    if (
+      e.target.matches(".product-item__button span") ||
+      e.target.matches(".product-item__button i") ||
+      e.target.matches(".product-item__button")
+    ) {
       const itemChild = {
         photo: this.querySelector(".product-image img").src,
         title: this.querySelector(".itemTitle").textContent,
@@ -316,9 +320,9 @@ window.addEventListener("load", function () {
     const p2 = document.createElement("p");
     p2.textContent = item.number;
     const p3 = document.createElement("p");
-    p3.textContent = item.price;
+    p3.textContent = formatMoney(item.price);
     const p4 = document.createElement("p");
-    p4.textContent = item.number * item.price + "đ";
+    p4.textContent = formatMoney(item.number * item.price);
     const p5 = document.createElement("p");
     p5.textContent = "Xóa";
     p5.className = "modal-clear";
@@ -343,7 +347,7 @@ window.addEventListener("load", function () {
         sum += item.number * item.price;
         numberCart += item.number;
       });
-      sumMoney.textContent = sum + "đ";
+      sumMoney.textContent = formatMoney(sum);
       numberoption.textContent = numberCart;
     } else {
       sumMoney.textContent = "0";
@@ -352,7 +356,9 @@ window.addEventListener("load", function () {
   }
   handleSumMoney();
   showCart();
-
+  function formatMoney(num) {
+    return Intl.NumberFormat("vi-VN").format(num) + " đ";
+  }
   //remove itemcart
   modalMain.addEventListener("click", function (e) {
     if (e.target.matches(".modal-clear")) {
