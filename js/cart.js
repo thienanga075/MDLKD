@@ -339,6 +339,7 @@ window.addEventListener("load", function () {
       listItem.forEach((item, index) => renderItemModal(item));
     }
   }
+  
   function handleSumMoney() {
     let sum = 0;
     let numberCart = 0;

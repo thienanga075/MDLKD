@@ -123,50 +123,57 @@
       <div class="register">
         <div class="container">
             <h2>Đăng ký người dùng</h2>
-            <form>
+            <form class="form-2">
                 <div class="row">
                     <div class="col">
                         <label class="form-label">Tên Đăng Nhập </label><br>
-                        <input id="form1" type="text" placeholder="Nhập tên đăng nhập" required>
+                        <input class="username" type="text" placeholder="Nhập tên đăng nhập" >
+                        <span class="errors error-1"></span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label class="form-label">Mật Khẩu</label><br>
-                        <input id="form2" type="password" placeholder="Nhập mật khẩu" required>
+                        <input class="pwd" type="password" placeholder="Nhập mật khẩu" >
+                        <span class="errors error-2"></span>
                     </div>
                     <div class="col">
                         <label class="form-label">Nhập Lại Mật Khẩu</label><br>
-                        <input id="form" type="password" placeholder="Nhập lại mật khẩu" required>
+                        <input class="r-pwd" type="password" placeholder="Nhập lại mật khẩu" >
+                        <span class="errors error-3"></span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label class="form-label">Giới Tính</label><br>
-                        <input id="form3" type="text" placeholder="Nam" required><br>
+                        <input class="gender" type="text" placeholder="Nam" ><br>
+                        <span class="errors error-4"></span>
                     </div>
 
                 </div>
                 <div class="row">
                     <div class="col">
                         <label class="form-label">Tên Hiển Thị</label><br>
-                        <input id="form4" type="text" placeholder="Nhập tên hiển thị" required><br>
+                        <input class="name" type="text" placeholder="Nhập tên hiển thị" ><br>
+                        <span class="errors error-5"></span>
                     </div>
 
                 </div>
                 <div class="row">
                     <div class="col">
                         <label class="form-label">Email</label><br>
-                        <input id="form5" type="email" placeholder="Nhập email" required><br>
+                        <input class="email" placeholder="Nhập email" ><br>
+                        <span class="errors error-6"></span>
                     </div>
                     <div class="col">
                         <label class="form-label">Số Điện Thoại</label> <br>
-                        <input id="form6" type="tel" placeholder="Nhập số điện thoại" required><br>
+                        <input class="phone" type="tel" placeholder="Nhập số điện thoại" ><br>
+                        <span class="errors error-7"></span>
                     </div>
 
                 </div>
                 <div class="row btn-form"><br>
-                    <button type="button" class="btn btn-dark d-block">Đăng Ký</button><br>
+                    <input class="submit" type="submit" class="btn btn-dark d-block" value="Đăng nhập"></input><br>
                 </div>
             </form>
         </div>
@@ -273,5 +280,6 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>

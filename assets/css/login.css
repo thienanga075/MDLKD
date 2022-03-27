@@ -72,3 +72,13 @@
     text-align: center;
     font-size: 15px;
   }
+
+  .errors{
+    color: red;
+    display: block;
+    margin-top: 10px;
+  }
+
+ .invalid {
+    border: 1px solid red !important;
+  }

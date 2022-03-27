@@ -50,17 +50,28 @@
 .register .container .row .col.error input {
   border: 2px solid rgb(138, 64, 64);
 }
-.register .container .row button {
+.btn-form input {
   padding: 10px 0px;
   font-size: 16px;
   text-decoration: none;
   background-color: black;
+  color: white; 
   transition: all 0.2s;
   border-radius: 5px;
 }
-.register .container .row button:hover {
-  background: #e97135;
+.btn-form input:hover {
+  background-color: #e97135 !important;
 }
 .container.complete {
   background: thistle;
+}
+
+.errors{
+  color: red;
+  display: block;
+  margin-top: 10px;
+}
+
+.invalid {
+  border: 1px solid red !important;
 }
