@@ -224,6 +224,7 @@ window.addEventListener("load", function () {
           <i class="fas fa-compress-alt"></i>
         </div>
       </div>
+      <div class="product-bot">
       <h3 class="itemTitle">${item.name}</h3>
       <div class="number-cart">
           <span>số lượng:</span>
@@ -233,6 +234,7 @@ window.addEventListener("load", function () {
         <p class="price-item">${item.price}
         </p>
         <span>đ</span>
+      </div>
       </div>
     </div>
     `;
@@ -244,7 +246,8 @@ window.addEventListener("load", function () {
     cartItems[i].insertAdjacentHTML("beforeend", Rederitem(itemC));
   }
 
-  var listItem = [];
+  let listItem = [];
+  console.log(listItem);
 
   //add cart items
 
@@ -271,16 +274,13 @@ window.addEventListener("load", function () {
       };
       let index = -1;
       // console.log(itemChild);
-      if (Array.from(listItem).length > 0) {
+      if (listItem.length > 0) {
         index = listItem.findIndex((item) => item.id === itemChild.id);
       }
       if (index > -1) {
         const newPrice = listItem[index].number + itemChild.number;
         listItem[index].number = newPrice;
-      } else if (
-        (index < 0 || Array.from(listItemgit).length === 0) &&
-        itemChild.number > 0
-      ) {
+      } else if ((index < 0 || listItem.length === 0) && itemChild.number > 0) {
         listItem.push(itemChild);
       } else {
         alert("so luong phải lon hon 0");
@@ -337,14 +337,14 @@ window.addEventListener("load", function () {
     console.log(listItem);
     modalMain.innerHTML = "";
     // console.log(listItem);\
-    if (Array.isArray(listItem) && [...listItem].length > 0) {
+    if (Array.isArray(listItem) && listItem.length > 0) {
       listItem.forEach((item, index) => renderItemModal(item));
     }
   }
   function handleSumMoney() {
     let sum = 0;
     let numberCart = 0;
-    if ([...listItem].length > 0) {
+    if (listItem.length > 0) {
       listItem.forEach((item, index) => {
         sum += item.number * item.price;
         numberCart += item.number;
