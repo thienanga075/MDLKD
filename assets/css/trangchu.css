@@ -4,6 +4,15 @@
 }
 
 
+.header-sign span a{
+    text-decoration: none;
+    color: var(----black-color);
+}
+
+.header-sign span a:hover{
+    color: var(----primary-color);
+}
+
 
 .header-top {
     display: flex;

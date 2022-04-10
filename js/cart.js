@@ -287,7 +287,7 @@ window.addEventListener("load", function () {
         alert("so luong phải lon hon 0");
       }
       window.localStorage.setItem("listItem", JSON.stringify(listItem));
-      this.querySelector(".number-cart input").value = "";
+      this.querySelector(".number-cart input").value = "1";
       // console.log(localStorage.length);
     }
   }
