@@ -275,6 +275,7 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    height: 300px;
 }
 
 .product-bot {
@@ -385,12 +386,14 @@
 
 
 .product-background {
-    background-image: url(../images/trangchu/product/item-fashion.jpg);
+    background-image: url(../images/trangchu/header/header10.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
-    padding: 45px 0;
+    height: 450px;
+    padding: 10px 20px;
     text-align: center;
+    background-size: auto;
+    text-align: left;
 }
 
 .product-background h3 {
@@ -426,7 +429,7 @@
 }
 
 .subsribe {
-    background-image: url(../images/trangchu/product/footer-item.jpg);
+    background-image: url(../images/trangchu/header/header11.jpg);
     height: 80vh;
     display: flex;
     padding: 40px 0;
@@ -445,6 +448,7 @@
 
 .box h2 {
     font-size: 3rem;
+    line-height: 1.2;
 }
 
 .box p {
