@@ -110,6 +110,12 @@
     cursor: pointer;
 }
 
+.header-login a,
+.header-registration a {
+    text-decoration: none;
+    color: black;
+}
+
 .header-cart,
 .header-search,
 .header-heart {
@@ -120,6 +126,21 @@
 .header-search i,
 .header-heart i {
     font-size: 2rem;
+}
+
+.banner_parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 8px;
+}
+
+.banner_item:nth-child(3),
+.banner_item:nth-child(1) {
+    border: 8px solid #fc82bd;
+}
+
+.banner_item:nth-child(2) {
+    border: 8px solid #69bff1;
 }
 
 .shop-option-2,
