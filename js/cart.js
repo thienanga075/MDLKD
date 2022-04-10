@@ -293,20 +293,20 @@ window.addEventListener("load", function () {
   }
 
   for (let i = 0; i < cartItems.length; i++) {
-    cartItems[i].addEventListener("click", addCart);
-    cartItems[i].addEventListener("click", showCart);
-    cartItems[i].addEventListener("click", handleSumMoney);
+    cartItems[i]?.addEventListener("click", addCart);
+    cartItems[i]?.addEventListener("click", showCart);
+    cartItems[i]?.addEventListener("click", handleSumMoney);
 
     // showcart();
   }
 
   // modal cart
-  cartIcon.addEventListener("click", function (e) {
+  cartIcon?.addEventListener("click", function (e) {
     if (modalCart) {
       modalCart.classList.add("active-modal");
     }
   });
-  modalTop.addEventListener("click", function () {
+  modalTop?.addEventListener("click", function () {
     modalCart.classList.remove("active-modal");
   });
 
@@ -340,7 +340,7 @@ window.addEventListener("load", function () {
       listItem.forEach((item, index) => renderItemModal(item));
     }
   }
-  
+
   function handleSumMoney() {
     listItem = JSON.parse(localStorage.getItem("listItem")) || [];
 
