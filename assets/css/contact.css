@@ -1,0 +1,49 @@
+.main{
+    margin: 30px 0;
+}
+
+.main h1{
+    font-size: 40px;
+    line-height: 1.2;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main .address, .number{
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+.main .number{
+    padding-bottom: 20px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+.contact td{
+    padding-bottom: 10px;
+}
+
+.contact label{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact input{
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.contact .submit{
+    width: 70px;
+}
+
+.contact .submit:hover{
+    cursor: pointer;
+    background-color: #7575;
+}
+
