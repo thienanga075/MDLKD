@@ -10,16 +10,24 @@
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/grid.css" />
+      />
+       <!-- BS5 -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="./assets/css/base.css" />
+
+      <link rel="stylesheet" href="./assets/css/grid.css" />
+
+      <link rel="stylesheet" href="./assets/css/register.css" />
+
+      <link rel="stylesheet" href="./assets/css/trangchu.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link rel="stylesheet" href="./assets/css/trangchu.css" />
-    <title>Trang chủ</title>
+    <title>Register</title>
   </head>
   <body>
     <div class="app">
@@ -113,127 +121,69 @@
             </div>
           </div>
         </div>
-        <div class="header-bottom">
-          <div class="slider-images">
-            <div class="item-img">
-              <img src="./assets/images/trangchu/header/header1.png" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="./assets/images/trangchu/header/header2.jpg" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="./assets/images/trangchu/header/header3.jpg" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="./assets/images/trangchu/header/header4.png" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="./assets/images/trangchu/header/header5.jpg" alt="" />
-            </div>
-          </div>
-        </div>
       </header>
-      <div class="main">
-        <div class="grid wide">
-          <div class="banner">
-            <div class="banner_parent">
-              <div class="banner_item">
-                <div class="banner-item">
-                  <img
-                    src="./assets/images/trangchu/header/banner1.jpg"
-                    alt=""
-                  />
+      <div class="register">
+        <div class="container">
+            <h2>Đăng ký người dùng</h2>
+            <form class="form-2">
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Tên Đăng Nhập </label><br>
+                        <input class="username" type="text" placeholder="Nhập tên đăng nhập" >
+                        <span class="errors error-1"></span>
+                    </div>
                 </div>
-              </div>
-              <div class="banner_item">
-                <div class="banner-item">
-                  <img
-                    src="./assets/images/trangchu/header/banner2.jpg"
-                    alt=""
-                  />
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Mật Khẩu</label><br>
+                        <input class="pwd" type="password" placeholder="Nhập mật khẩu" >
+                        <span class="errors error-2"></span>
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Nhập Lại Mật Khẩu</label><br>
+                        <input class="r-pwd" type="password" placeholder="Nhập lại mật khẩu" >
+                        <span class="errors error-3"></span>
+                    </div>
                 </div>
-              </div>
-              <div class="banner_item">
-                <div class="banner-item">
-                  <img
-                    src="./assets/images/trangchu/header/banner1.jpg"
-                    alt=""
-                  />
+                <div class="row">
+                    <div class="col">
+                        <select class="form-select form-select-lg mb-3 gender" aria-label=".form-select-lg example">
+                          <option value="0" >--Chọn Giới Tính--</option>
+                          <option value="1">Nam</option>
+                          <option value="2">Nữ</option>
+                        </select>
+                        <span class="errors error-4"></span>
+                    </div>
+
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-popular">
-            <div class="product-content">
-              <h2 class="product-tiltle__top">Sản Phẩm Thịnh Hành</h2>
-              <p class="product-title__bot">Bán Chạy Nhất Trong Tuần Này</p>
-            </div>
-            <div class="product-container">
-              <div class="row">
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-              </div>
-            </div>
-          </div>
-          <div class="product-fashionSale">
-            <div class="product-background">
-              <h3>Chuyển phát nhanh, từ 1.000.000</h3>
-              <h2>Final Fashion Sale</h2>
-              <h2>SS 21/22 Collections</h2>
-              <p class="p-color">Giá trong tuần này:</p>
-              <p>Giảm giá tới 69% so với giá thông thường</p>
-              <button class="collect">
-                Bộ Sưu Tập
-                <i class="fas fa-angle-right"></i>
-              </button>
-            </div>
-          </div>
-          <div class="product-popular">
-            <div class="product-content">
-              <h2 class="product-tiltle__top">Sản Phẩm Bán Chạy Nhất</h2>
-              <p class="product-title__bot">Bán Chạy Nhất Trong Tuần Này</p>
-            </div>
-            <div class="product-container">
-              <div class="row">
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-                <div class="col l-3 cartitem"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <div class="subsribe">
-          <div class="box">
-            <form action="#">
-              <h2>Đăng Ký Nhận Thông Tin Sản Phẩm Của Chúng Tôi</h2>
-              <p>
-                Hãy đón nhận bản tin hàng tuần và xây dựng các cửa hàng thương
-                mại điện tử tốt hơn.
-              </p>
-              <div class="input-email">
-                <input type="email" required />
-                <button>Đăng Ký</button>
-              </div>
-              <p>
-                Chúng tôi tôn trọng quyền riêng tư của bạn, vì vậy chúng tôi
-                không bao giờ chia sẻ thông tin của bạn.
-              </p>
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Tên Hiển Thị</label><br>
+                        <input class="name" type="text" placeholder="Nhập tên hiển thị" ><br>
+                        <span class="errors error-5"></span>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Email</label><br>
+                        <input class="email" placeholder="Nhập email" ><br>
+                        <span class="errors error-6"></span>
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Số Điện Thoại</label> <br>
+                        <input class="phone" type="tel" placeholder="Nhập số điện thoại" ><br>
+                        <span class="errors error-7"></span>
+                    </div>
+
+                </div>
+                <div class="row btn-form"><br>
+                    <input class="submit" type="submit" class="btn btn-dark d-block" value="Đăng nhập"></input><br>
+                </div>
             </form>
-          </div>
         </div>
+    </div>
+      <div class="footer">
         <div class="footer-container">
           <div class="footer-top">
             <div class="row">
@@ -283,7 +233,7 @@
                       <i class="fas fa-phone"></i>
                       <p class="info">(+84)012345678</p>
                     </div>
-                    <p>nhom04_CT188</p>
+                    <p>nhom05_CT188</p>
                   </div>
                   <div class="contact-bot">
                     <h2>Địa chỉ</h2>
@@ -339,22 +289,21 @@
         </div>
       </div>
     </div>
+    <!-- BS5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <!-- <script
+    <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
-    ></script> -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     ></script>
-    <!-- <script
+
+    <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script> -->
+    ></script>
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
@@ -363,7 +312,8 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="./js/slider.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>
