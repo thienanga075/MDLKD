@@ -1,5 +1,6 @@
 * {
   font-size: 18px;
+  font-family: "Roboto", sans-serif;
 }
 .register {
   box-sizing: border-box;
@@ -74,4 +75,11 @@
 
 .invalid {
   border: 1px solid red !important;
+}
+
+.form-select-lg {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1.7rem;
 }
