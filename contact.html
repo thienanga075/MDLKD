@@ -19,8 +19,8 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="./assets/css/trangchu.css" />
-    <link rel="stylesheet" href="./assets/css/contact.css">
-    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <title>Liên hệ</title>
   </head>
   <body>
     <div class="app">
@@ -38,10 +38,10 @@
           <div class="header-navbar">
             <ul class="navbar-list">
               <li class="navbar-item">
-                <a href="index.html" class="header-item__link">Trang Chủ</a>
+                <a href="./index.html" class="header-item__link">Trang Chủ</a>
               </li>
               <li class="navbar-item item-option">
-                <a href="index.html" class="header-item__link"
+                <a href="./index.html" class="header-item__link"
                   >Cửa Hàng
                   <i class="icon-arrow fa fa-angle-down"></i>
                 </a>
@@ -66,7 +66,7 @@
                 <div class="shop-option-2">
                   <ul class="shop-list">
                     <li class="shop-item">
-                      <a href="#" class="shop-link">Về Chúng Tôi</a>
+                      <a href="./about.html" class="shop-link">Về Chúng Tôi</a>
                     </li>
                     <li class="shop-item">
                       <a href="#" class="shop-link">Liên Hệ</a>
@@ -84,7 +84,7 @@
                 <a href="baiviet.html" class="header-item__link">Bài Viết</a>
               </li>
               <li class="navbar-item">
-                <a href="index.html" class="header-item__link">Liên Hệ</a>
+                <a href="./contact.html" class="header-item__link">Liên Hệ</a>
               </li>
             </ul>
           </div>
@@ -136,33 +136,76 @@
       </header>
       <div class="main">
         <h1>Liên Hệ</h1>
-        <p class="address">Mọi thông tin liên lạc qua địa chỉ: <b> Đường 3/2, Quận Ninh Kiều, TP.Cần Thơ</b></p>
+        <p class="address">
+          Mọi thông tin liên lạc qua địa chỉ:
+          <b> Đường 3/2, Quận Ninh Kiều, TP.Cần Thơ</b>
+        </p>
         <p class="number">Số điện thoại: <b>0123456789</b></p>
-        <form  id="form_contact" class="contact"onsubmit="return validateLH(this)"  action="" method="post" enctype="application/x-www-form-urlencoded" >
-            <table>
-                <tr>
-                    <td><label for="name">Họ và Tên</label></td>
-                    <td><input name="name" id="name" type="text" required placeholder="Vui lòng nhập họ và tên"></td>
-                </tr>
-                <tr>
-                    <td><label for="email">Email</label></td>
-                    <td><input name="email" id="email" type="text" required placeholder="Vui lòng nhập email liên hệ"></td>
-                </tr>
-                <tr>
-                    <td><label for="sdt">Số điện thoại</label></td>
-                    <td><input name="number" id="sdt" type="text" required placeholder="Vui lòng nhập sdt liên hệ"></td>
-                </tr>
-                <tr>
-                    <td><label for="content">Nội dung</label></td>
-                    <td><textarea name="content" id="content" cols="50" rows="10"></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2" ><input class="submit" type="submit" value="Gửi"></td>
-                </tr>
-            </table>
+        <form
+          id="form_contact"
+          class="contact"
+          onsubmit="return validateLH(this)"
+          action="#"
+          method="post"
+          enctype="application/x-www-form-urlencoded"
+        >
+          <table>
+            <tr>
+              <td><label for="name">Họ và Tên</label></td>
+              <td>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  required
+                  placeholder="Vui lòng nhập họ và tên"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td>
+                <input
+                  name="email"
+                  id="email"
+                  type="text"
+                  required
+                  placeholder="Vui lòng nhập email liên hệ"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="sdt">Số điện thoại</label></td>
+              <td>
+                <input
+                  name="number"
+                  id="sdt"
+                  type="text"
+                  required
+                  placeholder="Vui lòng nhập sdt liên hệ"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="content">Nội dung</label></td>
+              <td>
+                <textarea
+                  name="content"
+                  id="content"
+                  cols="50"
+                  rows="10"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input class="submit" type="submit" value="Gửi" />
+              </td>
+            </tr>
+          </table>
         </form>
-        </div>
-          
+      </div>
+
       <div class="footer">
         <div class="subsribe">
           <div class="box">
@@ -314,8 +357,6 @@
     ></script>
     <script src="./js/slider.js"></script>
     <script src="./js/cart.js"></script>
-    <script src="./js/contact.js">
-        
-    </script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>
