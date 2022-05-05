@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
     }
   });
 
-  const items = [
+   const items = [
     {
       id: 1,
       name: "Khăn Lau Mặt Dùng 1 Lần",
@@ -210,6 +210,7 @@ window.addEventListener("load", function () {
     const template = `
     <div class="product-item" data-id=${item.id}>
       <div class="product-image">
+        
         <img
           src=${item.photo}
           alt=""
@@ -252,6 +253,7 @@ window.addEventListener("load", function () {
   //add cart items
 
   function addCart(e) {
+    let detail = [];
     // window.onstorage = () => {
     //   listItem =
     //     localStorage.length > 0
@@ -259,8 +261,15 @@ window.addEventListener("load", function () {
     //       : [];
     //   console.log("thay doi");
     // };
+    console.log(e.target);
+    if (e.target.matches(".product-image img")) {
+      let id = this.querySelector(".product-item").dataset.id;
+      detail.push(id);
+      window.localStorage.setItem("detail", JSON.stringify(detail));
+      window.location.href = "./detail.html";
+    }
     listItem = JSON.parse(localStorage.getItem("listItem")) || [];
-    console.log(listItem);
+    // console.log(listItem);
     if (
       e.target.matches(".product-item__button span") ||
       e.target.matches(".product-item__button i") ||
@@ -287,6 +296,7 @@ window.addEventListener("load", function () {
         alert("so luong phải lon hon 0");
       }
       window.localStorage.setItem("listItem", JSON.stringify(listItem));
+
       this.querySelector(".number-cart input").value = "1";
       // console.log(localStorage.length);
     }
@@ -333,7 +343,7 @@ window.addEventListener("load", function () {
 
   function showCart() {
     listItem = JSON.parse(localStorage.getItem("listItem")) || [];
-    console.log(listItem);
+    // console.log(listItem);
     modalMain.innerHTML = "";
     // console.log(listItem);\
     if (Array.isArray(listItem) && listItem.length > 0) {
