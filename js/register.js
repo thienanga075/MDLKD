@@ -19,7 +19,7 @@ window.addEventListener("load", function () {
   let isPwd = false;
 
   form.onsubmit = (e) => {
-    console.log(gender.value);
+    // console.log(gender.value);
     e.preventDefault();
     if (username.value == "") {
       error1.innerText = "Bạn cần nhập Tài Khoản, tối thiểu 10 ký tự";
