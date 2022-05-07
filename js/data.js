@@ -168,7 +168,7 @@ function loadItem(arrayitem, cartItems) {
   // console.log(cartItems);
   for (let i = 0; i < arrayitem.length; i++) {
     let itemC = arrayitem[i];
-    cartItems[i].insertAdjacentHTML("beforeend", Rederitem(itemC));
+    cartItems[i]?.insertAdjacentHTML("beforeend", Rederitem(itemC));
   }
 }
 //chuyển tiếng việt có dấu thành khong dấu
@@ -203,6 +203,11 @@ function removeVietnameseTones(str) {
   );
   return str;
 }
+function formatMoney(num) {
+  return Intl.NumberFormat("vi-VN").format(num);
+}
+export { formatMoney };
+
 export { removeVietnameseTones };
 export { items };
 export { loadItem };
