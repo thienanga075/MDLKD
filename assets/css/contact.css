@@ -5,7 +5,7 @@
 .main h1{
     font-size: 40px;
     line-height: 1.2;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -15,9 +15,6 @@
     text-align: center;
 }
 
-.main .number{
-    padding-bottom: 20px;
-}
 .contact{
     display: flex;
     justify-content: center;
@@ -30,20 +27,44 @@
 .contact label{
     font-size: 20px;
     font-weight: 600;
+    color: rgb(255, 125, 38);
 }
 
 .contact input{
-    width: 300px;
+    width: 390px;
     height: 30px;
     font-size: 20px;
 }
 
 .contact .submit{
-    width: 70px;
+    width: 100%;
+    background-color:rgb(252, 253, 180);
 }
 
 .contact .submit:hover{
     cursor: pointer;
-    background-color: #7575;
+    background-color: rgb(255, 125, 38);
 }
 
+.table{
+    display: flex;
+    justify-content: center;
+}
+
+.table td{
+    width: 440px;
+    text-align: center;
+    line-height: 1.5;
+    /* border: 1px solid rgb(250, 155, 14); */
+}
+
+.table i{
+    padding-top: 15px;
+    font-size: 45px;
+    color: rgb(255, 125, 38);
+}
+
+.table h3{
+    font-size: 25px;
+    color: rgb(255, 125, 38);
+}
