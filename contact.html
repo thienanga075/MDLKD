@@ -48,12 +48,11 @@
                 <div class="shop-option">
                   <ul class="shop-list">
                     <li class="shop-item">
-                      <a href="./product.html" class="shop-link">Sản phẩm</a>
+                      <a href="#" class="shop-link">Danh Sách Yêu Thích</a>
                     </li>
                     <li class="shop-item">
                       <a href="./thanhtoan.html" class="shop-link"
-                        >Thủ Tục Thanh Toán</a
-                      >
+                        >Thủ Tục Thanh Toán</a>
                     </li>
                   </ul>
                 </div>
@@ -114,87 +113,43 @@
             </div>
           </div>
         </div>
-        <div class="header-bottom">
-          <div class="slider-images">
-            <div class="item-img">
-              <img src="./assets/images/trangchu/header/header1.png" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="./assets/images/trangchu/header/header2.jpg" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="./assets/images/trangchu/header/header3.jpg" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="./assets/images/trangchu/header/header4.png" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="./assets/images/trangchu/header/header5.jpg" alt="" />
-            </div>
-          </div>
-        </div>
       </header>
       <div class="main">
         <h1>Liên Hệ</h1>
-        <p class="address">
-          Mọi thông tin liên lạc qua địa chỉ:
-          <b> Đường 3/2, Quận Ninh Kiều, TP.Cần Thơ</b>
-        </p>
-        <p class="number">Số điện thoại: <b>0123456789</b></p>
-        <form
-          id="form_contact"
-          class="contact"
-          onsubmit="return validateLH(this)"
-          action="#"
-          method="post"
-          enctype="application/x-www-form-urlencoded"
-        >
+        <table class="table">
+          <td>
+            <div><i class="fas fa-location-arrow"></i></div>
+            <h3>LOCATION</h3>
+            <p class="address"><b>No: </b>Đường 3/2, Quận Ninh Kiều, TP.Cần Thơ</p></td>
+          <td>
+            <div><i class="fas fa-phone-alt"></i></div>
+            <h3>TALK TO US</h3>
+            <p class="number"><b>Toll-Free: </b>0123456789</p></td>
+        </table>
+        <form id="form_contact" class="contact"onsubmit="return validateLH(this)" action="#" method="post" enctype="application/x-www-form-urlencoded">
           <table>
             <tr>
               <td><label for="name">Họ và Tên</label></td>
               <td>
-                <input
-                  name="name"
-                  id="name"
-                  type="text"
-                  required
-                  placeholder="Vui lòng nhập họ và tên"
-                />
+                <input name="name" id="name" type="text" required placeholder="Vui lòng nhập họ và tên"/>
               </td>
             </tr>
             <tr>
               <td><label for="email">Email</label></td>
               <td>
-                <input
-                  name="email"
-                  id="email"
-                  type="text"
-                  required
-                  placeholder="Vui lòng nhập email liên hệ"
-                />
+                <input name="email" id="email" type="text" required placeholder="Vui lòng nhập email liên hệ"/>
               </td>
             </tr>
             <tr>
               <td><label for="sdt">Số điện thoại</label></td>
               <td>
-                <input
-                  name="number"
-                  id="sdt"
-                  type="text"
-                  required
-                  placeholder="Vui lòng nhập sdt liên hệ"
-                />
+                <input name="number" id="sdt" type="text" required placeholder="Vui lòng nhập sdt liên hệ"/>
               </td>
             </tr>
             <tr>
               <td><label for="content">Nội dung</label></td>
               <td>
-                <textarea
-                  name="content"
-                  id="content"
-                  cols="50"
-                  rows="10"
-                ></textarea>
+                <textarea name="content" id="content" cols="50" rows="10"></textarea>
               </td>
             </tr>
             <tr>
@@ -207,25 +162,6 @@
       </div>
 
       <div class="footer">
-        <div class="subsribe">
-          <div class="box">
-            <form action="#">
-              <h2>Đăng Ký Nhận Thông Tin Sản Phẩm Của Chúng Tôi</h2>
-              <p>
-                Hãy đón nhận bản tin hàng tuần và xây dựng các cửa hàng thương
-                mại điện tử tốt hơn.
-              </p>
-              <div class="input-email">
-                <input type="email" required />
-                <button>Đăng Ký</button>
-              </div>
-              <p>
-                Chúng tôi tôn trọng quyền riêng tư của bạn, vì vậy chúng tôi
-                không bao giờ chia sẻ thông tin của bạn.
-              </p>
-            </form>
-          </div>
-        </div>
         <div class="footer-container">
           <div class="footer-top">
             <div class="row">
@@ -295,6 +231,7 @@
                 >Copyright © <span class="left-span">M&B</span> all rights
                 reserved.</span
               >
+
             </div>
             <div class="footer-bot__right">
               <img src="./assets/images/trangchu/footer-contact.png" alt="" />
@@ -356,7 +293,7 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/slider.js"></script>
-    <script src="./js/cart.js" type="module"></script>
+    <script src="./js/cart.js"></script>
     <script src="./js/contact.js"></script>
   </body>
 </html>
