@@ -1,4 +1,4 @@
-import { items, loadItem } from "./data.js";
+import { items, loadItem, formatMoney } from "./data.js";
 
 window.addEventListener("load", function () {
   const cartItems = document.querySelectorAll(".cartitem");
@@ -150,9 +150,7 @@ window.addEventListener("load", function () {
   }
   handleSumMoney();
   showCart();
-  function formatMoney(num) {
-    return Intl.NumberFormat("vi-VN").format(num) + " đ";
-  }
+
   //remove itemcart
   modalMain.addEventListener("click", function (e) {
     if (e.target.matches(".modal-clear")) {

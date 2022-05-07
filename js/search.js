@@ -35,7 +35,15 @@ window.addEventListener("load", function () {
     });
     console.log(arrSearch);
     if (arrSearch.length > 0) {
+      const errorProduct = document.querySelector(".error-product");
+      errorProduct.textContent = "";
+      errorProduct.style.padding = "0";
       loadItem(arrSearch, cartItems);
+    } else {
+      const errorProduct = document.querySelector(".error-product");
+      errorProduct.style.padding = "12px";
+
+      errorProduct.textContent = "Không có sản phẩm cần tìm";
     }
   });
 });

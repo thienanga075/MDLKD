@@ -1,8 +1,7 @@
 .product-search {
+
     margin: 12px 0;
-    display: grid;
-    grid-template-columns: 1.5fr 1.5fr 3fr;
-    grid-gap: 0 12px
+
 }
 
 .dropdown {
@@ -25,10 +24,14 @@
 
 .frmSearch {
     display: flex;
+    justify-content: flex-end;
     gap: 0 8px;
 }
 
 .frmSearch input {
+
+    width: 500px;
+    padding: 12px;
     flex: 1;
     font-size: 1.8rem;
     border-radius: 4px;
@@ -43,4 +46,12 @@
     border-radius: 4px;
     ;
     background-color: #F67A60;
+}
+
+.error-product {
+    font-size: 3rem;
+    text-align: center;
+    background-color: #F67A60;
+    color: #fff;
+    margin: 12px 0;
 }
