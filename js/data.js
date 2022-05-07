@@ -127,37 +127,50 @@ const items = [
     price: 29000,
     photo: "./assets/images/product/item16.jpg",
   },
-  {
-    id: 17,
-
-    name: "Xe tròn tập đi",
-
-    price: 290000,
-    photo: "./assets/images/product/item17.jpg",
-  },
-  {
-    id: 18,
-
-    name: "Khẩu trang tre em 3D",
-
-    price: 10000,
-    photo: "./assets/images/product/item18.jpg",
-  },
-  {
-    id: 19,
-
-    name: "Bịt gọc bàn,cạnh bàn",
-
-    price: 5000,
-    photo: "./assets/images/product/item19.jpg",
-  },
-  {
-    id: 20,
-
-    name: "Bộ 36 miếng thảm xốp cho bé",
-
-    price: 15000,
-    photo: "./assets/images/product/item20.jpg",
-  },
 ];
+const Rederitem = (item) => {
+  const template = `
+  <div class="product-item" data-id=${item.id}>
+    <div class="product-image">
+      
+      <img
+        src=${item.photo}
+        alt=""
+      />
+      <button class="product-item__button">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Add To Cart</span>
+      </button>
+      <div class="product-item__option-right">
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-eye"></i>
+        <i class="fas fa-compress-alt"></i>
+      </div>
+    </div>
+    <div class="product-bot">
+    <h3 class="itemTitle">${item.name}</h3>
+    <div class="number-cart">
+        <span>số lượng:</span>
+         <input type="number" value="1"/>
+    </div>
+    <div class="priceCon">
+      <p class="price-item">${item.price}
+      </p>
+      <span>đ</span>
+    </div>
+    </div>
+  </div>
+  `;
+  return template;
+};
+const cartItems = document.querySelectorAll(".cartitem");
+
+function loadItem(arrayitem) {
+  // console.log(cartItems);
+  for (let i = 0; i < cartItems.length; i++) {
+    let itemC = arrayitem[i];
+    cartItems[i].insertAdjacentHTML("beforeend", Rederitem(itemC));
+  }
+}
 export { items };
+export { loadItem };

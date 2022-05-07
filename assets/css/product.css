@@ -1,0 +1,46 @@
+.product-search {
+    margin: 12px 0;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 3fr;
+    grid-gap: 0 12px
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.dropdown a {
+    /* text-align: left; */
+    padding: 12px 0;
+    background-color: #F67A60;
+    columns: #000;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.btn {
+    width: 100%;
+}
+
+.frmSearch {
+    display: flex;
+    gap: 0 8px;
+}
+
+.frmSearch input {
+    flex: 1;
+    font-size: 1.8rem;
+    border-radius: 4px;
+}
+
+.frmSearch button {
+    padding: 12px 16px;
+    font-size: 1.5rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    ;
+    background-color: #F67A60;
+}
