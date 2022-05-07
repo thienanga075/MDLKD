@@ -11,6 +11,7 @@
 
 .header-sign span a:hover {
     color: var(----primary-color);
+    transition: all 0.3s;
 }
 
 
@@ -67,7 +68,7 @@
 .header-item__link {
     text-decoration: none;
     font-size: 1.6rem;
-    color: var(----black-color);
+    color: var(--primary-color);
     padding: 0.5rem;
     font-weight: 200;
     margin: 0 8px;
@@ -136,11 +137,13 @@
 
 .banner_item:nth-child(3),
 .banner_item:nth-child(1) {
-    border: 8px solid #fc82bd;
+    border: 4px solid #fc82bd;
+    border-radius: 12px;
 }
 
 .banner_item:nth-child(2) {
-    border: 8px solid #69bff1;
+    border-radius: 12px;
+    border: 4px solid #69bff1;
 }
 
 .shop-option-2,
@@ -176,14 +179,20 @@
     text-align: center;
 }
 
+.navbar-item:hover .header-item__link{
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    transition: all .3s;
+}
 .header-heart:hover,
 .header-cart:hover,
 .header-search:hover,
 .header-login:hover,
 .header-registration:hover,
-.navbar-item:hover .header-item__link,
 .shop-link:hover {
     color: var(--primary-color);
+    transition: all 0.3s;
 }
 
 .item-option-2:hover .shop-option-2,
@@ -315,6 +324,8 @@
 .product-item {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     color: #fff;
+    border: 1px solid rgb(243, 242, 242);
+    border-radius: 10px;
 }
 
 .product-item__button,
@@ -369,13 +380,15 @@
 .product-item__button:hover,
 .product-item__option-right i:hover {
     /* background-color: var(--primary-color); */
-    opacity: 0.3;
+    opacity: 0.6;
     cursor: pointer;
+    transition: all 0.25s ease;
 }
 
 
 .product-image {
     border-radius: 8px;
+    cursor: pointer;
 
 }
 
@@ -412,6 +425,7 @@
 .product-item h3 {
     font-size: 1.6rem;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .price-item {
