@@ -111,9 +111,9 @@ window.addEventListener("load", function () {
     const p2 = document.createElement("p");
     p2.textContent = item.number;
     const p3 = document.createElement("p");
-    p3.textContent = formatMoney(item.price);
+    p3.textContent = formatMoney(item.price) + "đ";
     const p4 = document.createElement("p");
-    p4.textContent = formatMoney(item.number * item.price);
+    p4.textContent = formatMoney(item.number * item.price) + "đ";
     const p5 = document.createElement("p");
     p5.textContent = "Xóa";
     p5.className = "modal-clear";
@@ -141,7 +141,7 @@ window.addEventListener("load", function () {
         sum += item.number * item.price;
         numberCart += item.number;
       });
-      sumMoney.textContent = formatMoney(sum);
+      sumMoney.textContent = formatMoney(sum) + "đ";
       numberoption.textContent = numberCart;
     } else {
       sumMoney.textContent = "0";
