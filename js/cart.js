@@ -1,6 +1,8 @@
-import { items } from "./data.js";
+import { items, loadItem } from "./data.js";
+
 window.addEventListener("load", function () {
   const cartItems = document.querySelectorAll(".cartitem");
+
   const cartIcon = document.querySelector(".header-cart i");
   const modalCart = document.querySelector(".modal-cart");
   const modalTop = document.querySelector(".modal-top .modal-close");
@@ -23,71 +25,9 @@ window.addEventListener("load", function () {
     }
   });
 
-  /**
-   <div class="product-item">
-                    <div class="product-image">
-                      <img
-                        src="./assets/images/trangchu/product/item2.jpg"
-                        alt=""
-                      />
-                      <button class="product-item__button">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span>Add To Cart</span>
-                      </button>
-                      <div class="product-item__option-right">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-eye"></i>
-                        <i class="fas fa-compress-alt"></i>
-                      </div>
-                    </div>
-                    <h3>Kính cổ điển phụ nữ</h3>
-
-                    <p class="price-item">390.000 đ</p>
-                  </div> 
-   */
-  const Rederitem = (item) => {
-    const template = `
-    <div class="product-item" data-id=${item.id}>
-      <div class="product-image">
-        
-        <img
-          src=${item.photo}
-          alt=""
-        />
-        <button class="product-item__button">
-          <i class="fas fa-shopping-cart"></i>
-          <span>Add To Cart</span>
-        </button>
-        <div class="product-item__option-right">
-          <i class="fas fa-heart"></i>
-          <i class="fas fa-eye"></i>
-          <i class="fas fa-compress-alt"></i>
-        </div>
-      </div>
-      <div class="product-bot">
-      <h3 class="itemTitle">${item.name}</h3>
-      <div class="number-cart">
-          <span>số lượng:</span>
-           <input type="number" value="1"/>
-      </div>
-      <div class="priceCon">
-        <p class="price-item">${item.price}
-        </p>
-        <span>đ</span>
-      </div>
-      </div>
-    </div>
-    `;
-    return template;
-  };
-  // console.log(cartItems);
-  for (let i = 0; i < cartItems.length; i++) {
-    let itemC = items[i];
-    cartItems[i].insertAdjacentHTML("beforeend", Rederitem(itemC));
-  }
+  loadItem(items);
 
   let listItem = [];
-  console.log(listItem);
 
   //add cart items
 
