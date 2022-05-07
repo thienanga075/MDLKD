@@ -1,4 +1,4 @@
-import { items, loadItem } from "./data.js";
+import { items, loadItem, removeVietnameseTones } from "./data.js";
 
 window.addEventListener("load", function () {
   const cartItems = document.querySelectorAll(".cartitem");
@@ -17,13 +17,12 @@ window.addEventListener("load", function () {
     e.preventDefault();
     let arrSearch = [];
 
-    const valueSearch = this.querySelector(".search").value.toLowerCase();
-    console.log(typeof valueSearch);
-
+    let valueSearch = this.querySelector(".search").value.toLowerCase();
+    valueSearch = removeVietnameseTones(valueSearch);
     if (items.length > 0) {
       items.forEach((item) => {
         let value = item.name;
-        value = value.toLowerCase();
+        value = removeVietnameseTones(value.toLowerCase());
         if (value.indexOf(valueSearch) > -1) {
           arrSearch.push(item);
         }
@@ -31,12 +30,12 @@ window.addEventListener("load", function () {
     }
 
     // render lại sản phầm dựa vào từ khóa
-    cartItems.forEach((item) => {
+    cartItems?.forEach((item) => {
       item.innerHTML = "";
     });
     console.log(arrSearch);
     if (arrSearch.length > 0) {
-      loadItem(arrSearch);
+      loadItem(arrSearch, cartItems);
     }
   });
 });

@@ -25,11 +25,12 @@ window.addEventListener("load", function () {
     }
   });
 
-  loadItem(items);
+  loadItem(items, cartItems);
 
   let listItem = [];
 
   //add cart items
+  //and info page detail
 
   function addCart(e) {
     let detail = [];
