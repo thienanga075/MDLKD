@@ -36,7 +36,7 @@
     text-align: center;
     border: 2px solid #000;
     padding: 15px 0;
-    background-color: rgba(252, 205, 64, 1);
+    /* background-color: rgba(252, 205, 64, 1); */
     color: #000;
 }
 
@@ -46,6 +46,6 @@
     width: 33.3333333%;
     padding: 10px 15px;
     vertical-align: top;
-    background-color: rgba(147, 217, 247, 1);
+    /* background-color: rgba(147, 217, 247, 1); */
 }
 

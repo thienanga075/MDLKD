@@ -1,3 +1,6 @@
+* {
+    font-size: 16px;
+}
 .blog {
     display: flex;
     justify-content: center;
@@ -36,9 +39,17 @@
     color: black;
     font-weight: bold;
 }
-.text {
-    font-size: 15px;
+
+.read-more-btn {
+    width: fit-content;
 }
+
+.read-more-btn:hover {
+    opacity: 0.6;
+}
+ main{
+     margin-bottom: 50px;
+ }
 button {
     width: 90px;
     height: 30px;

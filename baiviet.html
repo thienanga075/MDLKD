@@ -1,346 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <link rel="stylesheet" href="./assets/css/base.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài viết</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/baiviet.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
 
-    <link rel="stylesheet" href="./assets/css/grid.css" />
+  <link rel="stylesheet" href="./assets/css/grid.css" />
 
-    <link rel="stylesheet" href="./assets/css/thanhtoan.css" />
+  <link rel="stylesheet" href="./assets/css/thanhtoan.css" />
 
-    <link rel="stylesheet" href="./assets/css/trangchu.css" />
-    <link rel="stylesheet" href="./assets/css/baiviet.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <title>Bài viết</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- HEADER  -->
-      <header class="header">
-        <div class="header__first">
-          <div class="top-bar">
-            <ul class="top-bar__first">
-              <li><i class="bi bi-telephone-outbound"></i> (+84) 123456789</li>
-              <li><i class="far fa-envelope"></i>Nhom4_CT18810</li>
-            </ul>
-            <ul class="top-bar__second">
-              <li>Giao hàng miễn phí với các đơn hàng từ 1 triệu đồng</li>
-              <li>Mua ngay!</li>
-            </ul>
-            <ul class="top-bar__third">
-              <li class="top-bar__third--region">
-                <a href=""
-                  >Vietnamese <i class="icon-arrow fa fa-angle-down"></i
-                ></a>
-                <ul class="menu-English">
-                  <li><a href="">English</a></li>
-                  <li><a href="">French</a></li>
-                </ul>
-              </li>
-              <li class="top-bar__third--price"><a href="">VND</a></li>
-              <div class="top-bar__third--icon">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"> <i class="fab fa-twitter"></i></a>
-                <a href="#"> <i class="fab fa-youtube"></i></a>
-                <a href="#"> <i class="fab fa-pinterest"></i></a>
-                <a href="#"> <i class="fa fa-envelope"></i></a>
-              </div>
-            </ul>
-          </div>
+  <link rel="stylesheet" href="./assets/css/trangchu.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>Bài viết</title>
+</head>
+
+<body>
+  <div class="app">
+    <!-- HEADER  -->
+    <header class="header">
+      <div class="header-top">
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="./assets/images/trangchu/logo-header.jpg" alt="" class="header-logo__img" />
+          </a>
         </div>
-        <div class="main-header">
-          <div class="top-nav">
-            <div class="menu-ipad-mobile">
-              <i class="bi bi-list"></i>
-            </div>
-            <img class="top-nav__img" src="./img/logo/logo_x2.png" />
-            <ul class="top-nav__first">
-              <li><a href="index.html">Trang chủ</a></li>
-              <li class="top-nav__first__Shop">
-                <a href="products.html"
-                  >Cửa hàng <i class="icon-arrow fa fa-angle-down"></i
-                ></a>
-                <ul class="menu-Shop">
-                  <li>
+        <div class="header-navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="header-item__link">Trang Chủ</a>
+            </li>
+            <li class="navbar-item item-option">
+              <a href="index.html" class="header-item__link">Cửa Hàng
+                <i class="icon-arrow fa fa-angle-down"></i>
+              </a>
+              <div class="shop-option">
+                <ul class="shop-list">
+                  <li class="shop-item">
                     <a href="./product.html" class="shop-link">Sản phẩm</a>
                   </li>
-                  <li><a href="checkout.html">Thủ tục thanh toán</a></li>
+                  <li class="shop-item">
+                    <a href="./thanhtoan.html" class="shop-link">Thủ Tục Thanh Toán</a>
+                  </li>
                 </ul>
-              </li>
-              <li class="top-nav__first__Page">
-                <a href="#"
-                  >Trang <i class="icon-arrow fa fa-angle-down"></i
-                ></a>
-                <ul class="menu-Page">
-                  <li><a href="#">Về chúng tôi</a></li>
-                  <li><a href="#">Liên hệ</a></li>
-                  <li><a href="wishlist.html">Danh sách yêu thích</a></li>
-                  <li><a href="login.html">Tài khoản của tôi</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="blog.html">Bài viết </a>
-              </li>
-              <li><a href="#">Liên hệ</a></li>
-            </ul>
-            <div class="top-nav__second">
-              <div class="top-nav__second--login-regis">
-                <a href="./login.html"><i class="far fa-user"></i> Đăng nhập</a
-                >/<a class="top-nav__second--regis" href="./register.html"
-                  >Đăng ký</a
-                >
               </div>
-              <ul class="top-nav__second__icon">
-                <li class="item addWishlist">
-                  <a href="wishlist.html"><i class="bi bi-heart"></i></a
-                  ><span class="before" id="before1">0</span>
-                </li>
-                <li class="item card-item">
-                  <a data-bs-toggle="modal" data-bs-target="#cardModal"
-                    ><i class="bi bi-handbag"></i></a
-                  ><span class="before" id="before">0</span>
-                </li>
-                <li>
-                  <a><i class="bi bi-search"></i></a>
-                </li>
-              </ul>
+            </li>
+            <li class="navbar-item item-option-2">
+              <a href="index.html" class="header-item__link">Trang
+                <i class="icon-arrow fa fa-angle-down"></i>
+              </a>
+              <div class="shop-option-2">
+                <ul class="shop-list">
+                  <li class="shop-item">
+                    <a href="./about.html" class="shop-link">Về Chúng Tôi</a>
+                  </li>
+                  <li class="shop-item">
+                    <a href="#" class="shop-link">Liên Hệ</a>
+                  </li>
+                  <li class="shop-item">
+                    <a href="#" class="shop-link">Danh Sách Yêu Thích</a>
+                  </li>
+                  <li class="shop-item">
+                    <a href="#" class="shop-link">Tài Khoản Của Tôi</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navbar-item">
+              <a href="./baiviet.html" class="header-item__link">Bài Viết</a>
+            </li>
+            <li class="navbar-item">
+              <a href="./contact.html" class="header-item__link">Liên Hệ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-interactive">
+          <div class="header-sign">
+            <div class="header-login">
+              <i class="fas fa-user"></i>
+              <span><a href="./login.html">Đăng nhập</a></span>
+            </div>
+            <span class="seperate">/</span>
+            <div class="header-registration">
+              <span><a href="./register.html">Đăng kí</a></span>
+            </div>
+          </div>
+          <div class="header-option">
+            <div class="header-heart">
+              <i class="fas fa-heart"></i>
+              <span class="number-option number-option-heart">0</span>
+            </div>
+            <div class="header-cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="number-option number-option-cart">0</span>
+            </div>
+            <div class="header-search">
+              <i class="fas fa-search"></i>
             </div>
           </div>
         </div>
-      </header>
-      <!-- Modal Card-->
-      <div
-        class="modal fade"
-        id="cardModal"
-        tabindex="-1"
-        aria-labelledby="modalCard"
-        aria-hidden="true"
-      >
-        <div style="min-width: 800px" class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalCard">Giỏ hàng</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr style="text-align: center">
-                    <th scope="col">Hình ảnh</th>
-                    <th scope="col">Tên sản phẩm</th>
-                    <th scope="col">Số lượng</th>
-                    <th scope="col">Đơn giá</th>
-                    <th scope="col">Thành tiền</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody id="mini-cart-product1"></tbody>
-                <tfoot>
-                  <tr class="total text-center">
-                    <td colspan="3"></td>
-                    <td class="fs-5">Tổng tiền</td>
-                    <td class="sub-total fs-5" id="sub-total1"></td>
-                  </tr>
-                </tfoot>
-              </table>
+      </div>
 
-              <div class="products-cart">
-                <div class="mini-cart align-items-center">
-                  <div class="mini-cart-list">
-                    <ul id="mini-cart-product2"></ul>
-                  </div>
+    </header>
+    <!-- Modal Card-->
+    <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="modalCard" aria-hidden="true">
+      <div style="min-width: 800px" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCard">Giỏ hàng</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr style="text-align: center">
+                  <th scope="col">Hình ảnh</th>
+                  <th scope="col">Tên sản phẩm</th>
+                  <th scope="col">Số lượng</th>
+                  <th scope="col">Đơn giá</th>
+                  <th scope="col">Thành tiền</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="mini-cart-product1"></tbody>
+              <tfoot>
+                <tr class="total text-center">
+                  <td colspan="3"></td>
+                  <td class="fs-5">Tổng tiền</td>
+                  <td class="sub-total fs-5" id="sub-total1"></td>
+                </tr>
+              </tfoot>
+            </table>
 
-                  <div class="mini-cart-bottom">
-                    <div
-                      class="total d-flex align-items-center justify-content-between ms-4"
-                    >
-                      <strong> Tổng tiền: </strong>
-
-                      <div class="sub-total" id="sub-total2"></div>
-                    </div>
-                  </div>
+            <div class="products-cart">
+              <div class="mini-cart align-items-center">
+                <div class="mini-cart-list">
                 </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <a class="btn btn-light btn-disable">Xem giỏ hàng</a>
-              <a
-                href="checkout.html"
-                type="button"
-                class="btn btn-primary btn-primary"
-                >Đặt hàng</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal Detail-->
-      <div
-        class="modal fade"
-        id="detailModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div
-          class="modal-dialog modal-dialog-centered"
-          style="max-width: 900px"
-        >
-          <div class="modal-content modal-detail" id="modal-detail"></div>
-        </div>
-      </div>
-      <main class="main">
-        <!-- BLOG -->
-        <section class="blog">
-          <div class="blog-heading">
-            <h3><b>Tin Tức Mới Nhất</b></h3>
-            <span>Mẹo hay cho phái đẹp</span>
-          </div>
-          <div id="card" class="row"></div>
-        </section>
-      </main>
-      <!-- FOOTER -->
-      <footer class="footer">
-        <div class="contaniner">
-          <div class="row">
-            <div class="col">
-              <img src="./img/logo/logo-footer-rubix.png " alt="logo_x2" />
-              <section>
-                <a class="btn-floating text-white" href="#!" role="button">
-                  <i class="fab fa-facebook-f"></i
-                ></a>
-
-                <a class="btn-floating m-1 text-white" href="#!" role="button">
-                  <i class="fab fa-twitter"></i
-                ></a>
-
-                <a class="btn-floating m-1 text-white" href="#!" role="button">
-                  <i class="fab fa-youtube"></i
-                ></a>
-
-                <a class="btn-floating m-1 text-white" href="#!" role="button">
-                  <i class="fab fa-whatsapp"></i
-                ></a>
-              </section>
-            </div>
-            <div class="col">
-              <h4>Chăm sóc khách hàng</h4>
-              <ul>
-                <li>
-                  <a href="#" class="text-secondary">Tài khoản của tôi</a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary"
-                    >Theo dõi đơn hàng của tôi</a
-                  >
-                </li>
-                <li><a href="#" class="text-secondary">FAOs</a></li>
-                <li>
-                  <a href="#" class="text-secondary">Phương thức thanh toán</a>
-                </li>
-                <li>
-                  <a href="#" class="text-secondary">Hướng dẫn vận chuyển</a>
-                </li>
-                <li><a href="#" class="text-secondary">Hỗ trợ sản phẩm</a></li>
-                <li><a href="#" class="text-secondary">Thẻ quà tặng</a></li>
-              </ul>
-            </div>
-            <div class="col">
-              <h4>Xem thêm về Rubix</h4>
-              <div class="sci">
-                <ul>
-                  <li>
-                    <a href="#" class="text-secondary">Giới thiệu Rubix</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-secondary"
-                      >Đảm bảo của chúng tooi</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="text-secondary"
-                      >Các điều khoản và điều kiện</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="text-secondary">Danh sách yêu thích</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-secondary">Chính sách hoàn trả</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-secondary">Giao hàng và trả hàng</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-secondary">Sơ đồ trang web</a>
-                  </li>
-                </ul>
+              <div class="modal-footer">
+                <a class="btn btn-light btn-disable">Xem giỏ hàng</a>
+                <a href="checkout.html" type="button" class="btn btn-primary btn-primary">Đặt hàng</a>
               </div>
             </div>
-            <div class="col">
-              <h4 class="col-end">Liên Hệ</h4>
+          </div>
+        </div>
+        <!-- Modal Detail-->
+        <div class="modal fade" id <ul id="mini-cart-product2">
+          </ul>
+        </div>
+
+        <div class="mini-cart-bottom">
+          <div class="total d-flex align-items-center justify-content-between ms-4">
+            <strong> Tổng tiền: </strong>
+
+            <div class="sub-total" id="sub-total2"></div>
+          </div>
+        </div>
+      </div>
+      ="detailModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      >
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 900px">
+        <div class="modal-content modal-detail" id="modal-detail"></div>
+      </div>
+    </div>
+    <main class="main">
+      <!-- BLOG -->
+      <section class="blog">
+        <div class="blog-heading">
+          <h1><b>Tin Tức Mới Nhất</b></h1>
+          <span>Mẹo hay cho phái đẹp</span>
+        </div>
+        <div id="card" class="row"></div>
+      </section>
+      <div id="card" class="row">
+        <div class="col-md-4">
+          <img class="card-img-top flash" src="./assets/images/blog/blog10.webp" alt="Card image cap">
+          <div class="card-body">
+            <p><b class="text-warning"> Ngày 1 tháng 5, 2022</b></p>
+            <p><b class="card-title"><a href="product.html">Quà cho những gói nhỏ niềm vui</a></b></p>
+            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
+              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
+            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <img class="card-img-top flash" src="./assets/images/blog/blog11.webp" alt="Card image cap">
+          <div class="card-body">
+            <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
+            <p><b class="card-title"><a href="product.html">Giữ ấm cho trẻ sau khi tắm ...</a></b></p>
+            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
+              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
+            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <img class="card-img-top flash" src="./assets/images/blog/blog12.webp" alt="Card image cap">
+          <div class="card-body">
+            <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
+            <p><b class="card-title"><a href="product.html">Gói quà tặng Tinytots cho sinh nhật</a></b></p>
+            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
+              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
+            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <img class="card-img-top flash" src="./assets/images/blog/blog7.webp" alt="Card image cap">
+          <div class="card-body">
+            <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
+            <p><b class="card-title"><a href="product.html">Chăn lông thú giả cho trẻ sơ sinh</a></b></p>
+            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
+              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
+            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img class="card-img-top flash" src="./assets/images/blog/blog8.webp" alt="Card image cap">
+          <div class="card-body">
+            <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
+            <p><b class="card-title"><a href="product.html">Tất cả những điều một em bé cần!</a></b></p>
+            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
+              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
+            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img class="card-img-top flash" src="./assets/images/blog/blog9.webp" alt="Card image cap">
+          <div class="card-body">
+            <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
+            <p><b class="card-title"><a href="product.html">Bộ quà tặng cho trẻ em cho các dịp</a></b></p>
+            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
+              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
+            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  </main>
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="row">
+          <div class="col l-3">
+            <div class="footer-images">
+              <img src="./assets/images/trangchu/logo-footer.png" alt="" />
+              <div class="footer-icons">
+                <a href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col l-3">
+            <div class="footer-takeCare">
+              <h2>Chăm sóc khách hàng</h2>
               <ul>
-                <li>
-                  <a href="#" class="text-secondary"
-                    ><i class="fa fa-phone" aria-hidden="true"></i>&ensp; (+84)
-                    123456789</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-secondary"
-                    ><i class="fa fa-envelope-o" aria-hidden="true"></i
-                    >Nhom4_CT18810</a
-                  >
-                </li>
-              </ul>
-              <h4 class="col-end mt-3">Địa chỉ</h4>
-              <ul class="map">
-                <li>
-                  <a href="#" class="text-secondary"
-                    ><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;
-                    Đường 3/2 <br />
-                    Q.Ninh Kiều, TP.Cần Thơ</a
-                  >
-                </li>
+                <li>Tài khoản của tôi</li>
+                <li>Theo dõi đơn hàng của tôi</li>
+                <li>FAOs</li>
+                <li>Hỗ trợ sản phẩm</li>
               </ul>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <hr />
-              <a href="#" class="up-arrow">
-                <i class="fa fa-chevron-up"></i>
-              </a>
+          <div class="col l-3">
+            <div class="footer-takeCare">
+              <h2>Chăm sóc khách hàng</h2>
+              <ul>
+                <li>Tài khoản của tôi</li>
+                <li>Theo dõi đơn hàng của tôi</li>
+                <li>FAOs</li>
+                <li>Hỗ trợ sản phẩm</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l-3">
+            <div class="footer-contact">
+              <div class="contact-top">
+                <h2>Liên Hệ</h2>
+                <div class="contact-phone">
+                  <i class="fas fa-phone"></i>
+                  <p class="info">(+84)012345678</p>
+                </div>
+                <p>nhom04_CT188</p>
+              </div>
+              <div class="contact-bot">
+                <h2>Địa chỉ</h2>
+                <div class="contact-phone">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p class="info">Đường 3/2</p>
+                </div>
+                <p>Q.Ninh Kiều, Tp.Cần Thơ</p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="footer-bot">
+        <div class="footer-bot__left">
+          <span>Copyright © <span class="left-span">Rubix</span> all rights
+            reserved.</span>
+        </div>
+        <div class="footer-bot__right">
+          <img src="./assets/images/trangchu/footer-contact.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-cart">
+    <div class="modal-container">
+      <div class="modal-top">
+        <h2 class="modal-title">Giỏ Hàng</h2>
+        <i class="modal-close fas fa-times"></i>
         <div class="row my-3">
           <div class="col" style="display: flex; align-items: center">
             <p class="text-secondary mb-0">
@@ -348,25 +343,36 @@
               reserved.
             </p>
           </div>
-          <div
-            class="col"
-            style="display: flex; align-items: center; justify-content: center"
-          >
-            <img src="./img/icon/payment.png" alt="payment" />
+          <div class="model-main">
+            <div class="modal-main__top">
+              <span>Hình ảnh</span>
+              <span>Tên sản phầm</span>
+              <span>Số Lượng</span>
+              <span>Đơn giá</span>
+              <span>Thành tiền</span>
+              <span></span>
+            </div>
+            <div class="modal-main__center"></div>
+          </div>
+          <div class="modal-bot">
+            <div class="modal-cacular">
+              <span>Tổng tiền:</span>
+              <span class="sum-money"></span>
+            </div>
+            <a href="#" class="model-oder">
+              <button>Đặt Hàng</button>
+            </a>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
 
     <!-- BS5 -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <!-- MAIN JS -->
     <script src="./js/cart.js" type="module"></script>
-    <script src="./js/details.js"></script>
-    <script src="./js/listproducts.js"></script>
-  </body>
+</body>
+
 </html>
