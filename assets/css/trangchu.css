@@ -794,3 +794,12 @@
     margin-bottom: 20px;
     border-radius: 8px;
 }
+.user {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.user:hover, #logout:hover {
+    opacity: .7;
+}

@@ -1,6 +1,8 @@
 import { items, loadItem, formatMoney } from "./data.js";
 
 window.addEventListener("load", function () {
+  const logout = document.querySelector("#logout");
+
   const cartItems = document.querySelectorAll(".cartitem");
 
   const cartIcon = document.querySelector(".header-cart i");
@@ -167,5 +169,37 @@ window.addEventListener("load", function () {
       handleSumMoney();
     }
   });
-  console.log(listItem);
+
+  // console.log(listItem);
+
+  //===============Logout====================
+  logout.addEventListener("click", function (e) {
+    e.preventDefault();
+    localStorage.removeItem("User");
+    window.location.href = "./index.html";
+  });
 });
+
+//=====================Login===================
+const login = document.querySelector("#login");
+const headerSign = document.querySelector(".header-sign");
+
+function getLocale(key) {
+  const users =
+    localStorage.length > 0 ? JSON.parse(localStorage.getItem(key)) : [];
+  return users;
+}
+
+var user = getLocale("User");
+
+var textLogin = `
+              <div class="header-login">
+                  <a href="./profile.html" >Chào <span class="user"> ${user.username} </span> | <a href="#" id="logout">Thoát</a></a>
+              </div>`;
+
+login.innerHTML = "";
+
+if (user.username) {
+  login.innerHTML = textLogin;
+  headerSign.innerHTML = "";
+}
