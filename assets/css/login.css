@@ -3,82 +3,81 @@
 }
 
 .login {
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 100px 0px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .login-form {
-    width: 100%;
-    max-width: 450px;
-    margin: 20px auto;
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 10px;
-  }
-  
-  .login-form h4 {
-    color: black;
-    font-size: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .input-box {
-    margin-bottom: 10px;
-  }
-  .input-box p {
-    margin-bottom: 10px;
-  }
-  .input-box input {
-    padding: 8px 16px;
-    width: 100%;
-    border: 1px solid #cccccc;
-    outline: none;
-    border-radius: 5px;
-  }
-  
-  .btn-first {
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    background-color: black;
-    color: white;
-    padding: 10px 15px;
-    width: 100%;
-    cursor: pointer;
-    transition: all 0.2s;
-    margin-top: 15px;
-    border-radius: 5px;
-  }
-  .btn-first:hover {
-    background: #e97135;
-  }
-  .btn-second p a {
-    text-decoration: none;
-    color: #000;
-    transition: all 0.2s;
-  }
-  .btn-second a:hover {
-    color: #e97135;
-  }
-  .btn-second {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 15px;
-  }
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 100px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  .errors{
-    color: red;
-    display: block;
-    margin-top: 10px;
-  }
+.login .login-form {
+  max-width: 450px;
+  margin: 20px auto;
+}
 
- .invalid {
-    border: 1px solid red !important;
-  }
+.login .login-form h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.login .login-form .input-box input {
+  padding: 12px 16px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.login .login-form .input-box {
+  padding-bottom: 15px;
+  display: block;
+}
+
+.login .login-form .input-box label {
+  font-size: 18px;
+  padding-bottom: 15px;
+  display: block;
+}
+
+.login .login-form .input-box input:hover {
+  background-color: rgb(240, 241, 241);
+}
+
+.btn-first {
+  text-decoration: none;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 12px 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 8px;
+}
+.login .login-form .btn-first:hover {
+  background: var(--primary-color);
+}
+
+.login .login-form .btn-second {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.login .login-form .btn-second a:hover {
+  color: var(--primary-color);
+}
+
+.login .login-form .btn-second p a {
+  color: #000;
+  transition: all 0.2s;
+}
+
+.errors {
+  color: red;
+  display: block;
+  margin-top: 10px;
+}
+
+.invalid {
+  border: 1px solid red !important;
+}

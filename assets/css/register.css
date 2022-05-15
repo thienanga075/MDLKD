@@ -2,72 +2,54 @@
   font-size: 18px;
   font-family: "Roboto", sans-serif;
 }
+
 .register {
-  box-sizing: border-box;
-  padding-top: 10px;
-  padding-bottom: 50px;
-  margin: 0;
+  margin: 0px auto;
 }
+
 .register .container {
-  max-width: 800px;
+  max-width: 600px;
   margin: 20px auto;
   padding-top: 20px;
-  color: black;
 }
+
+.register .container .row .col {
+  padding: 8px;
+}
+
 .register .container h2 {
-  margin-top: 30px;
   font-size: 30px;
-  font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
 }
+
 .register .container .row col label {
-  font-size: 20px;
-  margin-bottom: 0px;
-  position: relative;
+  font-size: 18px;
 }
+
 .register .container .row input {
-  border: 1px solid rgb(212, 212, 212);
-  font-size: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 .register .container .row input:hover {
   background-color: rgb(240, 241, 241);
 }
 
-.register .container .row {
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-.register .container .row .col input {
-  width: 100%;
-}
-.register .container .row .col.error input {
-  border: 2px solid rgb(138, 64, 64);
-}
 .btn-form input {
-  padding: 10px 0px;
+  width: 100%;
   font-size: 16px;
-  text-decoration: none;
   background-color: black;
-  color: white; 
+  color: white;
   transition: all 0.2s;
-  border-radius: 5px;
-}
-.btn-form input:hover {
-  background-color: #e97135 !important;
-}
-.container.complete {
-  background: thistle;
+  border-radius: 8px;
+  border: none;
 }
 
-.errors{
+.btn-form input:hover {
+  background-color: var(--primary-color) !important;
+}
+
+.errors {
   color: red;
   display: block;
   margin-top: 10px;
@@ -78,8 +60,6 @@
 }
 
 .form-select-lg {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  font-size: 1.7rem;
+  padding: 10px 20px;
+  font-size: 15px;
 }
