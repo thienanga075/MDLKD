@@ -1,5 +1,6 @@
 window.addEventListener("load", function () {
   var form = document.querySelector(".form-2");
+  var btn = document.querySelector(".btn-submit");
   var username = document.querySelector(".username");
   var password = document.querySelector(".pwd");
   var rePassword = document.querySelector(".r-pwd");
@@ -61,18 +62,16 @@ window.addEventListener("load", function () {
     ) {
       console.log("Form submitted");
       alert("Đăng ký thành công");
-    }else{
-      alert("Đăng ký thất bại");
     }
   };
 
-  function check(){
+  function check() {
     username.onkeyup = () => {
       if (username.value !== "") {
-        if(username.value.length < 10){
+        if (username.value.length < 10) {
           error1.innerText = "Tài khoản phải từ 10 ký tự trở lên";
           username.classList.add("invalid");
-        }else{
+        } else {
           error1.innerText = "";
           username.classList.remove("invalid");
         }
@@ -81,10 +80,10 @@ window.addEventListener("load", function () {
 
     password.onkeyup = () => {
       if (password.value !== "") {
-        if(password.value.length < 10){
+        if (password.value.length < 10) {
           error2.innerText = "Mật khẩu phải từ 10 ký tự trở lên";
           password.classList.add("invalid");
-        }else{
+        } else {
           error2.innerText = "";
           password.classList.remove("invalid");
         }
@@ -93,11 +92,10 @@ window.addEventListener("load", function () {
 
     rePassword.onkeyup = () => {
       if (rePassword.value !== "") {
-        if(rePassword.value !== password.value){
+        if (rePassword.value !== password.value) {
           error3.innerText = "Bạn cần nhập đúng mật khẩu đã nhập";
           rePassword.classList.add("invalid");
-        }
-        else{
+        } else {
           error3.innerText = "";
           rePassword.classList.remove("invalid");
         }
@@ -132,10 +130,10 @@ window.addEventListener("load", function () {
     phone.onkeyup = () => {
       if (phone.value !== "") {
         const rule = /^[0-9]+$/;
-        if(!rule.test(phone.value)){
+        if (!rule.test(phone.value)) {
           error7.innerText = "Bạn cần nhập đúng định dạng số điện thoại 0-9";
           phone.classList.add("invalid");
-        }else{
+        } else {
           error7.innerText = "";
           phone.classList.remove("invalid");
         }
